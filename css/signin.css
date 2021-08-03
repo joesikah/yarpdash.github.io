@@ -1,115 +1,160 @@
 /* Split the screen in half */
 .split {
-    height: 40%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-    background-color: #FFFBF8;
-  }
-  
-  /* Control the left side */
-  .down {
-    left: 0;
-    background-color: #FF6700;
-  }
-  
-  /* Control the  side */
-  .top {
-    right: 0;
-    background-color: #FFFBF8;
-  }
+  height: 40%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background-color: #fffbf8;
+}
 
+/* Control the left side */
+.down {
+  left: 0;
+  background-color: #ff6700;
+}
+
+/* Control the  side */
+.top {
+  right: 0;
+  background-color: #fffbf8;
+}
 
 /*Sign In*/
 
-h1.text-center{
-      color: #fff;
-      padding-top: 3rem;
+h1.text-center {
+  color: #fff;
+  padding-top: 3rem;
 }
 
-p.text-center{
-    color: #fff;
+p.text-center {
+  color: #fff;
 }
 
-#email{
-    border-radius: 30px;
-    padding: 5px;
-    font-size: 15px;
-    color: #656565;
+/*======Input Field Start======*/
+#email {
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 15px;
+  color: #bcbcbc;
+  padding-left: 45px;
+  right: 0;
 }
 
-#pwd{
-    border-radius: 30px;
-    padding: 5px;
-    font-size: 15px;
-    color: #656565;
+#email:focus {
+  color: #656565;
 }
 
-#forgotpwd{
-    color: #656565
+#pwd {
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 15px;
+  color: #bcbcbc;
+  padding-left: 45px;
+  right: 0;
 }
 
-.card.text-center{
-    position: fixed;
-    z-index: 1;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 25rem;
-    border-radius: 30px;
-    padding: 5px;
-    box-shadow: 0 8px 15px -8px #ff964e;
-    padding-bottom: 2rem;
+#pwd:focus:active {
+  color: #656565;
 }
 
-#signin{
-    position: relative;
-    font-size: 25px;
-    color: #656565;
-    border-color: #ff6700;
-    padding-bottom: 7px;
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    width: fit-content;
-    left: 40%;
+#forgotpwd {
+  color: #656565;
 }
 
-
-
-.btn.btn-submit {
-    background-color: #ff6700;
-    color: #fff;
-    border-radius: 30px;
-}
-
-.btn-submit:hover{
-    background-color: #ff964e;
-    color: #fff !important;
-}
-
-span a{
-    text-decoration: none;
-    color: #52b3ef;
-}
-
-#signup-text{
-    color: #656565;
-    top: 84%;
-    position: fixed;
-    left: 0;
-    right: 0;
-}
-
-#google-img{
-    top: 90%;
-    position: fixed;
-    height: 30px;
-    width: 30px;
-    left: 48%;
-}
-
-
+        /*Icons*/
+div.inputWithIcon input[type="text"] {
+    padding-left: 40px;
+  }
   
+  .inputWithIcon {
+    position: relative;
+  }
+  
+  .inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 9px 18px;
+    color: #bcbcbc;
+  }
+/*======Input Field End======*/
+
+.card.text-center {
+  position: fixed;
+  z-index: 1;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  border-radius: 30px;
+  padding: 5px;
+  box-shadow: 0 8px 15px -8px #ff964e;
+  padding-bottom: 2rem;
+}
+
+#signin {
+  position: relative;
+  font-size: 25px;
+  color: #656565;
+  border-color: #ff6700;
+  padding-bottom: 7px;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  width: fit-content;
+  left: 37%;
+}
+
+
+
+/*Password Visibility*/
+.field-icon {
+  float: right;
+  padding: 0 18px;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  color: #626262;
+
+}
+
+/*======Sign In Button======*/
+.btn.btn-default {
+  background-color: #ff6700;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.btn-default:hover {
+  background-color: #ff964e;
+  color: #fff !important;
+}
+/*======Sign In Button======*/
+
+/*======Sign Up Text======*/
+span a {
+  text-decoration: none;
+  color: #52b3ef;
+}
+
+#signup-text {
+  color: #656565;
+  top: 84%;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+/*======Sign Up Text======*/
+
+/*======Sign In With Google======*/
+#google-img {
+  top: 90%;
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  left: 48%;
+}
+/*======Sign In With Google======*/

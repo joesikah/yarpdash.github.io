@@ -33,7 +33,7 @@ header h4{
 
 .logo-header{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FF6700;
@@ -44,7 +44,7 @@ header h4{
     position: relative;
     display: inline-block;
     bottom: -20px;
-    opacity: 1;  /*Work here!!!!*/
+    opacity: 0;  /*Work here!!!!*/
 }
 
 .logo.active{
