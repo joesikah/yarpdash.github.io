@@ -1,36 +1,22 @@
-/* Split the screen in half */
-.split {
-  height: 40%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-  background-color: #fffbf8;
+body{
+  overflow-y: scroll;
+  height: 130vh;
+  background-image: url("../images/signup-bg.jpg");
 }
 
-/* Control the left side */
-.down {
-  left: 0;
-  background-color: #ff6700;
-}
 
-/* Control the  side */
-.top {
-  right: 0;
-  background-color: #fffbf8;
-}
+
 
 /*Sign In*/
-
 h1.text-center {
   color: #fff;
   padding-top: 3rem;
+  position: relative;
 }
 
 p.text-center {
   color: #fff;
+  position: relative;
 }
 
 /*======Input Field Start======*/
@@ -45,6 +31,33 @@ p.text-center {
 
 #email:focus {
   color: #656565;
+}
+
+#fName {
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 15px;
+  color: #bcbcbc;
+  padding-left: 45px;
+  right: 0;
+}
+
+#phone {
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 15px;
+  color: #bcbcbc;
+  padding-left: 45px;
+  right: 0;
+}
+
+#lName {
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 15px;
+  color: #bcbcbc;
+  padding-left: 45px;
+  right: 0;
 }
 
 #pwd {
@@ -83,9 +96,9 @@ div.inputWithIcon input[type="text"] {
 /*======Input Field End======*/
 
 .card.text-center {
-  position: fixed;
+  position: absolute;
   z-index: 1;
-  top: 55%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 25rem;
@@ -107,8 +120,6 @@ div.inputWithIcon input[type="text"] {
   left: 37%;
 }
 
-
-
 /*Password Visibility*/
 .field-icon {
   float: right;
@@ -118,7 +129,6 @@ div.inputWithIcon input[type="text"] {
   position: relative;
   z-index: 2;
   color: #626262;
-
 }
 
 /*======Sign In Button======*/
@@ -139,22 +149,49 @@ span a {
   text-decoration: none;
   color: #52b3ef;
 }
-
-#signup-text {
-  color: #656565;
-  top: 84%;
-  position: fixed;
-  left: 0;
-  right: 0;
-}
 /*======Sign Up Text======*/
 
 /*======Sign In With Google======*/
 #google-img {
-  top: 90%;
-  position: fixed;
+  z-index: 1;
+  bottom: 1%;
   height: 30px;
   width: 30px;
   left: 48%;
+  position: absolute;
 }
 /*======Sign In With Google======*/
+
+.form-check1 {
+  z-index: 1;
+  color: #656565;
+  top: 41rem;
+  position: absolute;
+  left: 37%;
+}
+
+.form-check2 {
+  z-index: 1;
+  color: #656565;
+  top: 44rem;
+  position: absolute;
+  left: 33%;
+}
+
+@media only screen and (max-width: 480px) {
+  .form-check1 {
+    font-size: 13px;
+    left: 17%;
+    top: 43rem;
+  }
+
+  .form-check2 {
+    font-size: 13px;
+    left: 8%;
+    top: 45rem;
+  }
+
+  .card.text-center {
+    top: 60%;
+  }
+}
