@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1280, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="images/favicon.png">
 
@@ -52,32 +52,32 @@
             <ul>
                 <li>
                     <a href="#" class="active"><span class="fa fa-home active"></span>
-                    <span>Dashboard</span></a>
+                    <span class="text">Dashboard</span></a>
                 </li>
 
                 <li>
                     <a href="trip_history.html"><span class="fa fa-file-alt"></span>
-                    <span>Trip History</span></a>
+                    <span class="text">Trip History</span></a>
                 </li>
 
                 <li>
                     <a href="trucks.html"><span class="fa fa-truck"></span>
-                    <span>Trucks</span></a>
+                    <span class="text">Trucks</span></a>
                 </li>
 
                 <li>
                     <a href="tracking.html"><span class="fa fa-route"></span>
-                    <span>Tracking</span></a>
+                    <span class="text">Tracking</span></a>
                 </li>
 
                 <li>
                     <a href="schedules.html"><span class="fa fa-stopwatch"></span>
-                    <span>Schedules</span></a>
+                    <span class="text">Schedules</span></a>
                 </li>
 
                 <li>
                     <a href="reports.html"><span class="fa fa-flag"></span>
-                    <span>Reports</span></a>
+                    <span class="text">Reports</span></a>
                 </li>
             </ul>
 
@@ -87,8 +87,8 @@
             </div> 
 
             <div class="user-wrapper">
-                <img src="images/user.jpg" width="40px" height="40px" alt="">
-                <div>
+                <img class="img" src="images/user.jpg" width="40px" height="40px" alt="">
+                <div class="info">
                     <h6>John Doe</h6>
                     <small class="text-muted">484RTG63K</small>
                 </div>
@@ -101,10 +101,12 @@
             <div class="header-title">
                 <nav class="navbar navbar-expand-sm navbar-light bg-light">
                     <div class="container">
-                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbar1">
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             
                                 <div class="searchbar">
                                     <input class="search_input" type="text" name="" placeholder="Search...">
@@ -143,7 +145,7 @@
             <div class="container-fluid">
                 <!--First Section-->
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 pb-2">
                         <div class="card">
                             <div class="card-body" id="blue-card">
                                 <h4>3.4k <span>&#8942;</span></h4>
@@ -155,7 +157,7 @@
                         </div>
                     </div>
     
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 pb-2">
                         <div class="card">
                             <div class="card-body" id="orange-card">
                                 <h4>34 <span>&#8942;</span></h4>
@@ -164,7 +166,7 @@
                         </div>
                     </div>
     
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 pb-2">
                         <div class="card">
                             <div class="card-body" id="green-card">
                                 <h4>35 <span>&#8942;</span></h4>
@@ -173,7 +175,7 @@
                         </div>
                     </div>
     
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 pb-2">
                         <div class="card">
                             <div class="card-body" id="pink-card">
                                 <h4>2 <span>&#8942;</span></h4>
@@ -182,7 +184,7 @@
                         </div>
                     </div>
     
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 pb-2">
                         <div class="card">
                             <div class="card-body" id="velvet-card">
                                 <h4>12 <span>&#8942;</span></h4>
@@ -194,7 +196,7 @@
 
                 <!--Second Section-->
                 <div class="row pt-3">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 pb-3">
                         <div class="card">
                             <div class="card-body" id="overall-card">
                                 <div class="row">
@@ -246,7 +248,7 @@
                                     <p class="text-muted">To:</p>
                                 </div>
 
-                                <a type="button" href="" id="tripCard-btn">&#10140;</a>
+                                <a type="button" href="trip_history.html" id="tripCard-btn">&#10140;</a>
                             </div>
                         </div>
                     </div>
@@ -254,7 +256,7 @@
 
                 <!--Third Section-->
                 <div class="row pt-3">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 pb-3">
                         <div class="card">
                             <div class="card-body" id="update-card">
                                 <h4>Today's Trip Update <span>&#8942;</span></h4> <br>
@@ -275,7 +277,7 @@
                                     </div>
 
                                     <div class="col-sm-4">
-                                        <a type="button" href="#">View</a>
+                                        <a type="button" href="#" id="view-btn">View</a>
                                     </div>
 
 

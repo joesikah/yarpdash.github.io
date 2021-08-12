@@ -540,6 +540,12 @@ nav {
   #view-btn {
     margin-right: -9rem;
   }
+
+  .col-sm-6 li a{
+    font-size: 12px;
+  }
+
+
   /*====Main Content End====*/
 
 }

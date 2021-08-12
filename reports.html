@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1280, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="images/favicon.png">
 
@@ -52,32 +52,32 @@
             <ul>
                 <li>
                     <a href="dashboard.html"><span class="fa fa-home"></span>
-                    <span>Dashboard</span></a>
+                    <span class="text">Dashboard</span></a>
                 </li>
 
                 <li>
                     <a href="trip_history.html"><span class="fa fa-file-alt"></span>
-                    <span>Trip History</span></a>
+                    <span class="text">Trip History</span></a>
                 </li>
 
                 <li>
                     <a href="trucks.html"><span class="fa fa-truck"></span>
-                    <span>Trucks</span></a>
+                    <span class="text">Trucks</span></a>
                 </li>
 
                 <li>
                     <a href="tracking.html"><span class="fa fa-route"></span>
-                    <span>Tracking</span></a>
+                    <span class="text">Tracking</span></a>
                 </li>
 
                 <li>
                     <a href="schedules.html"><span class="fa fa-stopwatch"></span>
-                    <span>Schedules</span></a>
+                    <span class="text">Schedules</span></a>
                 </li>
 
                 <li>
                     <a href="#" class="active"><span class="fa fa-flag active"></span>
-                    <span>Reports</span></a>
+                    <span class="text">Reports</span></a>
                 </li>
             </ul>
 
@@ -88,7 +88,7 @@
 
             <div class="user-wrapper">
                 <img src="images/user.jpg" width="40px" height="40px" alt="">
-                <div>
+                <div class="info">
                     <h6>John Doe</h6>
                     <small class="text-muted">484RTG63K</small>
                 </div>
@@ -101,11 +101,13 @@
             <div class="header-title">
                 <nav class="navbar navbar-expand-sm navbar-light bg-light">
                     <div class="container">
-                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbar1">
-                            
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                             
                                 <div class="searchbar">
                                     <input class="search_input" type="text" name="" placeholder="Search...">
                                     <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
@@ -145,7 +147,7 @@
                         <div class="card-body" id="history-card">
                             <div class="row">
                                 <div class="col-sm-7">
-                                    <h4>Trucks</h4>
+                                    <h4>Reports</h4>
                                 </div>
 
                                 <div class="col-sm-1">
@@ -228,7 +230,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <br>
                 </div>
             </div> <br>
 
@@ -240,15 +242,9 @@
 
 
     <!--Bootstrap Script-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <!--JQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
