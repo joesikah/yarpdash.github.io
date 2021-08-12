@@ -292,3 +292,207 @@ span.fa-star{
   border-radius: 50%;
 }
 /*========Third Cards End========*/
+
+
+
+
+
+
+/*========== MOBILE PHONE RESPONSIVENESS =========*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 480px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+  /*====Sidebar Start====*/
+    .sidebar {
+      width: 90px
+    }
+
+    .sidebar .sidebar-info {
+      display: none;
+    }
+
+    .sidebar-brand h2{
+      margin-top: 2rem;
+      margin-right: 12rem;
+    }
+
+    .sidebar-menu span.fa{
+      margin-left: -1.8rem;
+    }
+
+    .sidebar-menu span.text {
+      display: none;
+    }
+
+    .sidebar-menu a {
+      padding-bottom: 15px;
+      margin-top: 2.5rem;
+    }
+
+    .sidebar-menu a.active {
+      background: #ff6700;
+      margin-left: -2rem;
+      margin-right: 1.5rem;
+      padding-left: 2.8rem;
+    }
+
+    .help-wrapper {
+      display: none;
+    }
+
+    .user-wrapper img, div.info{
+      display: none;
+    }
+  /*====Sidebar End====*/
+
+
+
+   
+  /*====Navbar Start====*/
+  .container button{
+    margin-left: 12rem;
+  }
+
+  .navbar-collapse div.searchbar{
+    display: none;
+  }
+
+  .navbar-nav {
+    margin-left: 13rem;
+    display: inline-block;
+  }
+  /*====Navbar Start====*/
+
+
+
+
+  /*====Main Content Start====*/
+  .main-content {
+    margin-left: 90px;
+  }
+
+  .container-fluid {
+    margin-top: 1rem;
+  }
+
+  .header-title h2{
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  #history-card{
+    overflow-x: scroll;
+  }
+
+  #addNew-btn {
+    margin-right: -17rem;
+  }
+
+  div.col-sm-1 {
+    display: none;
+  }
+  /*====Main Content End====*/
+
+}
+
+
+
+
+
+/*==========iPAD==========*/
+
+@media only screen 
+  and (min-device-width: 720px) 
+  and (max-device-width: 800px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+  /*====Sidebar Start====*/
+    .sidebar {
+      width: 180px
+    }
+
+    .sidebar-brand h2{
+      margin-top: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .sidebar-menu span.fa{
+      margin-left: -1.8rem;
+    }
+
+    
+
+    .sidebar-menu a {
+      padding-bottom: 15px;
+      margin-top: 2.5rem;
+    }
+
+    .sidebar-menu a.active {
+      background: #ff6700;
+      margin-left: -2rem;
+      margin-right: 1.5rem;
+      padding-left: 2.8rem;
+    }
+
+    .user-wrapper div.info{
+      margin-top: 7rem;
+      margin-left: -4rem;
+      text-align: center;
+    }
+
+    .user-wrapper {
+      margin-left: 4rem;
+    }
+  /*====Sidebar End====*/
+
+
+
+   
+  /*====Navbar Start====*/
+    .collapse {
+      margin-left: 28rem;
+    }
+
+    .navbar-collapse div.searchbar{
+      display: none;
+    }
+
+    
+  /*====Navbar Start====*/
+
+
+
+
+  /*====Main Content Start====*/
+  .main-content {
+    margin-left: 180px;
+  }
+
+  .container-fluid {
+    margin-top: 1rem;
+  }
+
+  .header-title h2{
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  #history-card{
+    overflow-x: scroll;
+  }
+
+  .col-sm-1 {
+    display: none;
+  }
+
+  #addNew-btn {
+    margin-right: -2rem;
+  }
+  /*====Main Content End====*/
+
+}

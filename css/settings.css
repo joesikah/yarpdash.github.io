@@ -34,7 +34,7 @@ body {
 
 .sidebar-menu li {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   margin-right: 1rem;
 }
 
@@ -205,13 +205,9 @@ div img {
   color: #656565;
 }
 
-
-
-
-
 /* The switch - the box around the slider */
 
-.form-group .row{
+.form-group .row {
   border: 0.5px solid #656565;
   margin: 4px;
   padding: 6px;
@@ -243,8 +239,8 @@ div img {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -255,8 +251,8 @@ div img {
   left: 2px;
   bottom: 2px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -280,4 +276,76 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+
+/*========== MOBILE PHONE RESPONSIVENESS =========*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  /*====Navbar Start====*/
+  nav.navbar {
+    margin-left: 0rem;
+    display: none;
+  }
+  .container button {
+    margin-left: 11rem;
+  }
+
+  .container {
+    margin-right: 20rem;
+  }
+
+  .navbar-collapse div.searchbar {
+    display: none;
+  }
+
+  .navbar-nav {
+    margin-left: 13rem;
+    display: inline-block;
+  }
+  /*====Navbar Start====*/
+
+  /*====Main Content Start====*/
+  .main-content {
+    margin-left: 100px;
+  }
+
+
+  /*====Main Content End====*/
+}
+
+
+
+
+
+/*========== iPAD =========*/
+@media only screen and (min-device-width: 720px) 
+  and (max-device-width: 800px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+
+
+  /*====Navbar Start====*/
+  nav.navbar {
+    margin-left: 0rem;
+    display: none;
+  }
+
+  .container button {
+    margin-left: 11rem;
+  }
+
+  .navbar-collapse div.searchbar {
+    display: none;
+  }
+
+  /*====Navbar Start====*/
+
+  /*====Main Content Start====*/
+  .main-content {
+    margin-left: 100px;
+  }
+
+
+  /*====Main Content End====*/
 }
